@@ -1,0 +1,54 @@
+.button {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+
+  &.theme1 {
+    background-color: #fff;
+    color: #000;
+
+    &.type2 {
+      background-color: #647198;
+      color: #fff;
+    }
+
+    &.type3 {
+      background-color: #d03f2f;
+      color: #fff;
+    }
+  }
+
+  &.theme2 {
+    background-color: #e5e4e1;
+    color: #36362c;
+
+    &.type2 {
+      background-color: #378187;
+      color: #fff;
+    }
+
+    &.type3 {
+      background-color: #c85402;
+      color: #fff;
+    }
+  }
+
+  &.theme3 {
+    background-color: #331c4d;
+    color: #ffe53d;
+
+    &.type2 {
+      background-color: #56077c;
+      color: #fff;
+    }
+
+    &.type3 {
+      background-color: #00ded0;
+      color: #1a2327;
+    }
+  }
+}

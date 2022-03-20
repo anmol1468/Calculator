@@ -1,0 +1,34 @@
+.display {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5.4rem;
+  letter-spacing: -0.8px;
+  border-radius: 1rem;
+  padding: 1.6rem 1.8rem;
+  height: 8rem;
+  text-align: right;
+  overflow-x: scroll;
+  letter-spacing: 4px;
+  text-align: right;
+
+  //hiding the scroll bar
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.theme1 {
+    color: #fff;
+    background-color: #181f33;
+  }
+  &.theme2 {
+    color: #36362c;
+    background-color: #eeeeee;
+  }
+  &.theme3 {
+    color: #ffe53d;
+    background-color: #1e0936;
+  }
+}

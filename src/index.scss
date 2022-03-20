@@ -1,0 +1,110 @@
+@mixin respond($breakpoint) {
+  @if ($breakpoint == ten) {
+    @media (max-width: 62.5em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == nine) {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == eight) {
+    @media (max-width: 50em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == seven) {
+    @media (max-width: 43.75em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == sixPointFive) {
+    @media (max-width: 38.9375em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == six) {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == five) {
+    @media (max-width: 31.25em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == four) {
+    @media (max-width: 25em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == three) {
+    @media (max-width: 18.75em) {
+      @content;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.App {
+  min-height: 100vh;
+
+  &.theme1 {
+    background-color: #647198;
+  }
+  &.theme2 {
+    background-color: #e5e4e1;
+  }
+  &.theme3 {
+    background-color: #18082b;
+  }
+
+  .CalcBox {
+    position: absolute;
+    max-width: 42rem;
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include respond(nine) {
+      width: 55%;
+    }
+    @include respond(eight) {
+      width: 60%;
+    }
+    @include respond(seven) {
+      width: 65%;
+    }
+    @include respond(six) {
+      width: 70%;
+    }
+    @include respond(six) {
+      width: 80%;
+    }
+    @include respond(five) {
+      width: 90%;
+    }
+    @include respond(five) {
+      width: 95%;
+    }
+    @include respond(four) {
+      width: 97%;
+    }
+  }
+}
+
+@import "./components/Button/Button";
+@import "./components/Display/Display";
+@import "./components/Header/Header";
+@import "./components/InputBox/InputBox";

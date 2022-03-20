@@ -1,0 +1,27 @@
+.inputBox {
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+
+  &.theme1 {
+    background-color: #181f33;
+  }
+  &.theme2 {
+    background-color: #d2cdcd;
+  }
+  &.theme3 {
+    background-color: #1e0936;
+  }
+
+  &__row {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+    margin: 1.6rem 0;
+
+    &.last {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
